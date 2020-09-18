@@ -13,17 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+import { createDevApp } from '@backstage/dev-utils';
+import { plugin } from '../src/plugin';
 
-import React from 'react';
-import List from '@material-ui/core/List';
-import ListSubheader from '@material-ui/core/ListSubheader';
-
-type Props = {
-  providerSettings: React.ReactNode;
-};
-
-export const AuthProvidersList = ({ providerSettings }: Props) => (
-  <List subheader={<ListSubheader>Available Auth Providers</ListSubheader>}>
-    {providerSettings}
-  </List>
-);
+createDevApp().registerPlugin(plugin).render();

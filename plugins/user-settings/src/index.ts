@@ -13,14 +13,5 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-import { useApi, identityApiRef } from '@backstage/core-api';
-
-export const useUserProfile = () => {
-  const identityApi = useApi(identityApiRef);
-  const userId = identityApi.getUserId();
-  const profile = identityApi.getProfile();
-  const displayName = profile.displayName ?? userId;
-
-  return { profile, displayName };
-};
+export { plugin } from './plugin';
+export { UserSettings } from './components/UserSettings';

@@ -15,7 +15,7 @@
  */
 
 import React from 'react';
-import { IconComponent, OAuthApi, OpenIdConnectApi } from '@backstage/core-api';
+import { IconComponent, OAuthApi, OpenIdConnectApi } from '@backstage/core';
 import {
   ListItem,
   ListItemIcon,

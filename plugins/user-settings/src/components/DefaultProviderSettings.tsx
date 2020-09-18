@@ -22,10 +22,11 @@ import {
   oktaAuthApiRef,
   microsoftAuthApiRef,
   useApi,
-} from '@backstage/core-api';
+} from '@backstage/core';
 import Star from '@material-ui/icons/Star';
 import React from 'react';
-import { OAuthProviderSettings, OIDCProviderSettings } from './Settings';
+import { OAuthProviderSettings } from './OAuthProviderSettings';
+import { OIDCProviderSettings } from './OIDCProviderSettings';
 
 export const DefaultProviderSettings = () => {
   const configApi = useApi(configApiRef);

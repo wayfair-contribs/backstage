@@ -22,7 +22,7 @@ import {
   Subscription,
   IconComponent,
   SessionState,
-} from '@backstage/core-api';
+} from '@backstage/core';
 import React, { FC, useState, useEffect } from 'react';
 import { ProviderSettingsItem } from './ProviderSettingsItem';
 
