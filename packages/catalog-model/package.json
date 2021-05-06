@@ -32,7 +32,7 @@
     "@backstage/config": "^0.1.5",
     "@types/json-schema": "^7.0.5",
     "@types/yup": "^0.29.8",
-    "ajv": "^7.0.3",
+    "ajv": "^8.2.0",
     "json-schema": "^0.3.0",
     "lodash": "^4.17.15",
     "uuid": "^8.0.0",
